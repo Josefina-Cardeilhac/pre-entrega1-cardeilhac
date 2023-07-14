@@ -27,7 +27,7 @@ while (true) {
   }
 }
 
-// Mostrar mensaje de despedida
+// Mensaje de despedida
 console.log("Gracias por jugar!");
 
 
