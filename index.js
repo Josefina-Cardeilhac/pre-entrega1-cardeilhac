@@ -1,4 +1,3 @@
-
 // Definir función para el simulador de adivinanzas
 const simuladorAdivinanzas = () => {
   // Generar un número aleatorio entre 1 y 10
@@ -40,7 +39,4 @@ const simuladorAdivinanzas = () => {
 };
 
 // Llamar a la función para iniciar el juego
-simuladorAdivinanzas();
-
-
-
+simuladorAdivinanzas(); 
