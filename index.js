@@ -1,3 +1,59 @@
+
+
+
+function Productos(objeto) {
+  this.nombre = objeto.nombre
+  this.precio = objeto.precio 
+  this.id = objeto.id
+}
+
+const producto1 = new Productos(
+  {
+    nombre:"shampoo sólido de avena", 
+    precio:1200, 
+    id:1
+  }
+)
+  
+  const producto2 = new Productos(
+    {
+      nombre:"shampoo sólido de arcilla blanca", 
+      precio:1200, 
+      id:2
+    }
+  )
+
+  const producto3 = new Productos(
+    {
+      nombre:"shampoo sólido de carbón activado",
+      precio:1200,  
+      id:3
+    }
+  )
+
+  let Carrito ={
+      lista:[],
+      total:0
+  }
+  function AgregarItem(producto) {
+    Carrito.lista.push(producto);
+    Carrito.total+=producto.precio;
+  
+    return(Carrito)
+  }
+  console.log(AgregarItem(producto1))
+  
+  console.log(Carrito.lista)
+
+
+  
+
+
+
+
+
+
+/*
 // Definir función para el simulador de adivinanzas
 const simuladorAdivinanzas = () => {
   // Generar un número aleatorio entre 1 y 10
@@ -39,4 +95,8 @@ const simuladorAdivinanzas = () => {
 };
 
 // Llamar a la función para iniciar el juego
-simuladorAdivinanzas(); 
+simuladorAdivinanzas(); */
+
+
+
+
